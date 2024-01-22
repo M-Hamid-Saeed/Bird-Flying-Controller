@@ -1,254 +1,97 @@
 fileFormatVersion: 2
 guid: 3c7e2122fe2874b4eae030b4201bdece
+timeCreated: 1537434824
+licenseType: Store
 ModelImporter:
-  serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: BackBone
-  - first:
-      1: 100002
-    second: BackBone_end
-  - first:
-      1: 100004
-    second: Bird_Rig
-  - first:
-      1: 100006
-    second: Cube.001
-  - first:
-      1: 100008
-    second: Head
-  - first:
-      1: 100010
-    second: Head_end
-  - first:
-      1: 100012
-    second: IK2_Left
-  - first:
-      1: 100014
-    second: IK2_Left_end
-  - first:
-      1: 100016
-    second: IK2_Right
-  - first:
-      1: 100018
-    second: IK2_Right_end
-  - first:
-      1: 100020
-    second: IK_Left
-  - first:
-      1: 100022
-    second: IK_Left_end
-  - first:
-      1: 100024
-    second: IK_Right
-  - first:
-      1: 100026
-    second: IK_Right_end
-  - first:
-      1: 100028
-    second: //RootNode
-  - first:
-      1: 100030
-    second: Root
-  - first:
-      1: 100032
-    second: Tail_Left
-  - first:
-      1: 100034
-    second: Tail_Left_end
-  - first:
-      1: 100036
-    second: Tail_MiddleLeft
-  - first:
-      1: 100038
-    second: Tail_MiddleLeft_end
-  - first:
-      1: 100040
-    second: Tail_MiddleRight
-  - first:
-      1: 100042
-    second: Tail_MiddleRight_end
-  - first:
-      1: 100044
-    second: Tail_Right
-  - first:
-      1: 100046
-    second: Tail_Right_end
-  - first:
-      1: 100048
-    second: Wing_Left1
-  - first:
-      1: 100050
-    second: Wing_Left2
-  - first:
-      1: 100052
-    second: Wing_Left2_end
-  - first:
-      1: 100054
-    second: Wing_Right1
-  - first:
-      1: 100056
-    second: Wing_Right2
-  - first:
-      1: 100058
-    second: Wing_Right2_end
-  - first:
-      4: 400000
-    second: BackBone
-  - first:
-      4: 400002
-    second: BackBone_end
-  - first:
-      4: 400004
-    second: Bird_Rig
-  - first:
-      4: 400006
-    second: Cube.001
-  - first:
-      4: 400008
-    second: Head
-  - first:
-      4: 400010
-    second: Head_end
-  - first:
-      4: 400012
-    second: IK2_Left
-  - first:
-      4: 400014
-    second: IK2_Left_end
-  - first:
-      4: 400016
-    second: IK2_Right
-  - first:
-      4: 400018
-    second: IK2_Right_end
-  - first:
-      4: 400020
-    second: IK_Left
-  - first:
-      4: 400022
-    second: IK_Left_end
-  - first:
-      4: 400024
-    second: IK_Right
-  - first:
-      4: 400026
-    second: IK_Right_end
-  - first:
-      4: 400028
-    second: //RootNode
-  - first:
-      4: 400030
-    second: Root
-  - first:
-      4: 400032
-    second: Tail_Left
-  - first:
-      4: 400034
-    second: Tail_Left_end
-  - first:
-      4: 400036
-    second: Tail_MiddleLeft
-  - first:
-      4: 400038
-    second: Tail_MiddleLeft_end
-  - first:
-      4: 400040
-    second: Tail_MiddleRight
-  - first:
-      4: 400042
-    second: Tail_MiddleRight_end
-  - first:
-      4: 400044
-    second: Tail_Right
-  - first:
-      4: 400046
-    second: Tail_Right_end
-  - first:
-      4: 400048
-    second: Wing_Left1
-  - first:
-      4: 400050
-    second: Wing_Left2
-  - first:
-      4: 400052
-    second: Wing_Left2_end
-  - first:
-      4: 400054
-    second: Wing_Right1
-  - first:
-      4: 400056
-    second: Wing_Right2
-  - first:
-      4: 400058
-    second: Wing_Right2_end
-  - first:
-      43: 4300000
-    second: Cube.001
-  - first:
-      74: 7400000
-    second: Flight_straight
-  - first:
-      74: 7400002
-    second: Bird_Rig|IdelVogelAction
-  - first:
-      74: 7400004
-    second: Bird_Rig|IdelVogelAction.001
-  - first:
-      74: 7400006
-    second: ParrotAnimation
-  - first:
-      74: 7400008
-    second: Flight_turn_right
-  - first:
-      74: 7400010
-    second: Flight_turn_left
-  - first:
-      74: 7400012
-    second: Glide_straight
-  - first:
-      74: 7400014
-    second: Glide_turn_right
-  - first:
-      74: 7400016
-    second: Glide_turn_left
-  - first:
-      74: 7400018
-    second: Hover_flight
-  - first:
-      74: 7400020
-    second: Idle_1
-  - first:
-      74: 7400022
-    second: Idle_2
-  - first:
-      74: 7400024
-    second: Touch_down
-  - first:
-      74: 7400026
-    second: Take_off
-  - first:
-      74: 7400028
-    second: Hop
-  - first:
-      95: 9500000
-    second: //RootNode
-  - first:
-      137: 13700000
-    second: Cube.001
-  externalObjects: {}
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BackBone
+    100002: BackBone_end
+    100004: Bird_Rig
+    100006: Cube.001
+    100008: Head
+    100010: Head_end
+    100012: IK2_Left
+    100014: IK2_Left_end
+    100016: IK2_Right
+    100018: IK2_Right_end
+    100020: IK_Left
+    100022: IK_Left_end
+    100024: IK_Right
+    100026: IK_Right_end
+    100028: //RootNode
+    100030: Root
+    100032: Tail_Left
+    100034: Tail_Left_end
+    100036: Tail_MiddleLeft
+    100038: Tail_MiddleLeft_end
+    100040: Tail_MiddleRight
+    100042: Tail_MiddleRight_end
+    100044: Tail_Right
+    100046: Tail_Right_end
+    100048: Wing_Left1
+    100050: Wing_Left2
+    100052: Wing_Left2_end
+    100054: Wing_Right1
+    100056: Wing_Right2
+    100058: Wing_Right2_end
+    400000: BackBone
+    400002: BackBone_end
+    400004: Bird_Rig
+    400006: Cube.001
+    400008: Head
+    400010: Head_end
+    400012: IK2_Left
+    400014: IK2_Left_end
+    400016: IK2_Right
+    400018: IK2_Right_end
+    400020: IK_Left
+    400022: IK_Left_end
+    400024: IK_Right
+    400026: IK_Right_end
+    400028: //RootNode
+    400030: Root
+    400032: Tail_Left
+    400034: Tail_Left_end
+    400036: Tail_MiddleLeft
+    400038: Tail_MiddleLeft_end
+    400040: Tail_MiddleRight
+    400042: Tail_MiddleRight_end
+    400044: Tail_Right
+    400046: Tail_Right_end
+    400048: Wing_Left1
+    400050: Wing_Left2
+    400052: Wing_Left2_end
+    400054: Wing_Right1
+    400056: Wing_Right2
+    400058: Wing_Right2_end
+    4300000: Cube.001
+    7400000: Flight_straight
+    7400002: Bird_Rig|IdelVogelAction
+    7400004: Bird_Rig|IdelVogelAction.001
+    7400006: ParrotAnimation
+    7400008: Flight_turn_right
+    7400010: Flight_turn_left
+    7400012: Glide_straight
+    7400014: Glide_turn_right
+    7400016: Glide_turn_left
+    7400018: Hover_flight
+    7400020: Idle_1
+    7400022: Idle_2
+    7400024: Touch_down
+    7400026: Take_off
+    7400028: Hop
+    9500000: //RootNode
+    13700000: Cube.001
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -256,20 +99,16 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: ParrotAnimation
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 0
       lastFrame: 1030
       wrapMode: 0
@@ -358,7 +197,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Flight_straight
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 0
       lastFrame: 25
       wrapMode: 0
@@ -447,7 +285,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Flight_turn_right
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 40
       lastFrame: 65
       wrapMode: 0
@@ -536,7 +373,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Flight_turn_left
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 80
       lastFrame: 105
       wrapMode: 0
@@ -625,7 +461,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Glide_straight
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 120
       lastFrame: 200
       wrapMode: 0
@@ -714,7 +549,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Glide_turn_right
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 220
       lastFrame: 300
       wrapMode: 0
@@ -801,11 +635,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Bird_Rig|ParrotBirdAnimation
+      name: Glide_turn_left
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 1030
+      firstFrame: 320
+      lastFrame: 400
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -892,7 +725,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Hover_flight
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 420
       lastFrame: 440
       wrapMode: 0
@@ -981,7 +813,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle_1
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 460
       lastFrame: 520
       wrapMode: 0
@@ -1070,7 +901,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle_2
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 540
       lastFrame: 780
       wrapMode: 0
@@ -1159,7 +989,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Touch_down
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 840
       lastFrame: 867
       wrapMode: 0
@@ -1248,7 +1077,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Take_off
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 920
       lastFrame: 964
       wrapMode: 0
@@ -1337,7 +1165,6 @@ ModelImporter:
     - serializedVersion: 16
       name: Hop
       takeName: Bird_Rig|ParrotBirdAnimation
-      internalID: 0
       firstFrame: 1000
       lastFrame: 1030
       wrapMode: 0
@@ -1429,47 +1256,26 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
-    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
-    nodeNameCollisionStrategy: 0
-    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
-    preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    optimizeBones: 1
-    meshOptimizationFlags: -1
-    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -1479,18 +1285,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
-  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -14,7 +14,8 @@ public class testingPhysics : MonoBehaviour
     [SerializeField]private float returnFactor;
     [SerializeField]private float percentageIncrease;
     [SerializeField]private float percentageDecrease;
-    [SerializeField]private float Y_RotationValue;
+    [SerializeField]private float alpha_Y_Rotation;
+    [SerializeField]private float Y_RotationPerSec;
     [SerializeField]private Animator anim;
     private bool shouldRoll;
     private Quaternion startRotation;
@@ -156,7 +157,7 @@ public class testingPhysics : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             Quaternion currentRotation = transform.rotation;
-            wantedRotation = Quaternion.AngleAxis(Y_RotationValue, -Vector3.up) *currentRotation ; //Quaternion.AngleAxis(Y_RotationValue, transform.forward);
+            wantedRotation = Quaternion.AngleAxis(Y_RotationPerSec, -Vector3.up) *currentRotation ; //Quaternion.AngleAxis(Y_RotationValue, transform.forward);
             Debug.Log("WANTED ROTATION" + wantedRotation.eulerAngles);
             // wantedRotation.x = Mathf.Clamp(wantedRotation.x, -10f, 10f);
             transform.rotation = Quaternion.Slerp(transform.rotation, wantedRotation, Time.fixedDeltaTime * 10 );
@@ -165,7 +166,7 @@ public class testingPhysics : MonoBehaviour
         {
             Quaternion currentRotation = transform.rotation;
             Debug.Log("WANTED ROTATION" + wantedRotation.eulerAngles);
-            wantedRotation = Quaternion.AngleAxis(Y_RotationValue, Vector3.up) * currentRotation;//* Quaternion.AngleAxis(Y_RotationValue, -transform.forward);
+            wantedRotation = Quaternion.AngleAxis(Y_RotationPerSec, Vector3.up) * currentRotation;//* Quaternion.AngleAxis(Y_RotationValue, -transform.forward);
             // wantedRotation.x = Mathf.Clamp(wantedRotation.x, -10f, 10f);
             
             transform.rotation = Quaternion.Slerp(transform.rotation, wantedRotation, Time.fixedDeltaTime * 10);
@@ -179,7 +180,7 @@ public class testingPhysics : MonoBehaviour
     {
         Quaternion localRot = transform.rotation;
        // Vector3 newRot = new Vector3((VerticalInput * tiltAngle), 0,0);
-        Vector3 newRot = new Vector3((VerticalInput * tiltAngle),localRot.eulerAngles.y, -HorizontalInput * tiltAngle /2);
+        Vector3 newRot = new Vector3((VerticalInput * tiltAngle),localRot.eulerAngles.y, -HorizontalInput * 80 );
        
         Quaternion target = Quaternion.Euler(newRot);
         
@@ -192,7 +193,7 @@ public class testingPhysics : MonoBehaviour
         else if (VerticalInput == 0 && !previousVerticalInput)
             alpha = Mathf.Clamp(alpha * (1 - (percentageDecrease / 100f)), smooth, 1.3f);
         if (Mathf.Abs(HorizontalInput) > 0)
-            alpha = returnFactor;
+            alpha = alpha_Y_Rotation;
         
 
         // alpha = VerticalInput == 0 && previousVerticalInput ? returnFactor : Mathf.Clamp(alpha * 1.5f, .01f, 1.8f);
