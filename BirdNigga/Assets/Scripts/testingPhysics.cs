@@ -17,6 +17,7 @@ public class testingPhysics : MonoBehaviour
     [SerializeField]private float alpha_Y_Rotation;
     [SerializeField]private float Y_RotationPerSec;
     [SerializeField]private Animator anim;
+    bool previousHorizontalInput;
     private bool shouldRoll;
     private Quaternion startRotation;
     private bool previousVerticalInput;
@@ -178,28 +179,30 @@ public class testingPhysics : MonoBehaviour
     }
     void UpDownlift()
     {
+        
         Quaternion localRot = transform.rotation;
        // Vector3 newRot = new Vector3((VerticalInput * tiltAngle), 0,0);
-        Vector3 newRot = new Vector3((VerticalInput * tiltAngle),localRot.eulerAngles.y, -HorizontalInput * 80 );
+        Vector3 newRot = new Vector3((VerticalInput * tiltAngle),localRot.eulerAngles.y, -HorizontalInput * tiltAngle );
        
         Quaternion target = Quaternion.Euler(newRot);
         
-        if ((VerticalInput == 0 && previousVerticalInput))
+        if ((VerticalInput == 0 && previousVerticalInput) || (HorizontalInput == 0 && previousHorizontalInput))
             alpha = returnFactor;
-        else if (Mathf.Abs(VerticalInput) > 0  /*Mathf.Abs(HorizontalInput) > 0)*/ && !previousVerticalInput)
+        else if ((Mathf.Abs(VerticalInput) > 0 && !previousVerticalInput) || (Mathf.Abs(HorizontalInput) > 0 && !previousHorizontalInput))
             alpha = smooth;
-        else if (Mathf.Abs(VerticalInput) > 0 && previousVerticalInput)
+        else if ((Mathf.Abs(VerticalInput) > 0 && previousVerticalInput) || (Mathf.Abs(HorizontalInput) > 0 && previousHorizontalInput))
             alpha = Mathf.Clamp(alpha * ((percentageIncrease / 100f) + 1), smooth, 1.3f);
-        else if (VerticalInput == 0 && !previousVerticalInput)
+        else if ((VerticalInput == 0 && !previousVerticalInput) || (HorizontalInput == 0 && !previousHorizontalInput))
             alpha = Mathf.Clamp(alpha * (1 - (percentageDecrease / 100f)), smooth, 1.3f);
-        if (Mathf.Abs(HorizontalInput) > 0)
-            alpha = alpha_Y_Rotation;
+      
+        
         
 
         // alpha = VerticalInput == 0 && previousVerticalInput ? returnFactor : Mathf.Clamp(alpha * 1.5f, .01f, 1.8f);
         
         transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.fixedDeltaTime * alpha);
         previousVerticalInput = Mathf.Abs(VerticalInput) > 0;//|| Mathf.Abs(HorizontalInput) > 0;
+        previousHorizontalInput = Mathf.Abs(HorizontalInput) > 0;
     }
         static public float ModularClamp(float val, float min, float max, float rangemin = -180f, float rangemax = 180f)
         {
